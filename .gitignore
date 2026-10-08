@@ -1,0 +1,27 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Sensitive credentials & environment files
+.env
+.env.*
+!.env.example
+langfuse.json
+
+# State & local caches
+.state/
+*.log
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/

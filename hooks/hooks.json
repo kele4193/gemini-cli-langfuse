@@ -1,0 +1,16 @@
+{
+  "AfterAgent": [
+    {
+      "matcher": "*",
+      "hooks": [
+        {
+          "name": "gemini-langfuse-tracer",
+          "type": "command",
+          "command": "python3 \"${extensionPath}${/}langfuse_hook.py\"",
+          "timeout": 15000,
+          "description": "Stream session traces to Langfuse"
+        }
+      ]
+    }
+  ]
+}

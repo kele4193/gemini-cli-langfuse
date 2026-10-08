@@ -1,0 +1,25 @@
+{
+  "name": "gemini-langfuse",
+  "version": "1.0.0",
+  "description": "Langfuse Observability & Tracing plugin for Gemini CLI",
+  "settings": [
+    {
+      "name": "Langfuse Base URL",
+      "description": "Base URL of Langfuse server (e.g. http://localhost:3000 or https://cloud.langfuse.com)",
+      "envVar": "LANGFUSE_BASE_URL",
+      "sensitive": false
+    },
+    {
+      "name": "Langfuse Public Key",
+      "description": "Public API Key from Langfuse project settings (pk-lf-...)",
+      "envVar": "LANGFUSE_PUBLIC_KEY",
+      "sensitive": false
+    },
+    {
+      "name": "Langfuse Secret Key",
+      "description": "Secret API Key from Langfuse project settings (sk-lf-...)",
+      "envVar": "LANGFUSE_SECRET_KEY",
+      "sensitive": true
+    }
+  ]
+}
